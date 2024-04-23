@@ -6,11 +6,11 @@ Read temperature from [usbtemp.com USB thermometer](https://usbtemp.com/) and DS
 2. Run `make` to compile the binary
 3. Execute the binary `./utmp-cli`
 
-The default output is time with the temperature in degrees Celsius and looks like:
+By default it outputs date, time and the temperature in degrees Celsius, like:
 ```
 May 13 17:05:02 Sensor C: 22.62
 ```
-By using `-f` switch the temperature unit will be switched to Fahrenheit. Date/time formatting is `%b %d %H:%M:%S` or `%Y-%m-%dT%H:%M:%SZ` (ISO 8601 in UTZ).
+By using `-f` switch the temperature unit will be changed to Fahrenheit. Date/time formatting is `%b %d %H:%M:%S` or `%Y-%m-%dT%H:%M:%SZ` (ISO 8601 in UTZ).
 
 Instead of compiling from the source, already compiled executable could be downloaded from [Releases tab](https://github.com/usbtemp/utmp-cli/releases/latest).
 

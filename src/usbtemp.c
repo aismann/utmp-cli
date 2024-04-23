@@ -39,7 +39,7 @@ static char* ut_msgs[] = {
   "Error, failed to open serial port device!",
   "Error, sensor not found!", /* 6 */
   "Error, sensor CRC mismatch!",
-  "Warining, not expected sensor response!",
+  "Warning, not expected sensor response!",
   "Error, could not send data!"
 };
 
