@@ -13,6 +13,8 @@
 #endif
 #endif
 
+#define __VER__ "v1.07"
+
 enum {
   HELP,
   ACQUIRE_TEMP,
@@ -79,6 +81,10 @@ int main(int argc, char **argv)
     }
   }
 
+  if (optind < argc) {
+    serial_port = *(argv + optind);
+  }
+
   if (units == 'F') {
     action = ACQUIRE_TEMP;
   }
@@ -101,7 +107,7 @@ int main(int argc, char **argv)
   }
 
   if (verbose) {
-    printf("USB Thermometer CLI v1.064 Copyright 2023 usbtemp.com et al. Licensed under MIT licence.\n");
+    printf("USB Thermometer CLI " __VER__ " Copyright 2024 usbtemp.com et al. Licensed under MIT licence.\n");
   }
 
   if (action == HELP) {
